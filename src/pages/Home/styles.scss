@@ -1,0 +1,59 @@
+.home {
+    min-height: 100vh;
+
+    .bottom {
+        margin-top: 50px;
+
+        .articles {
+            width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+
+    .made-backpulse {
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 11px;
+
+        img {
+            width: 30px;
+        }
+    }
+
+    .menu {
+        text-transform: uppercase;
+        color: #65ccb8;
+        font-family: 'Raleway';
+        justify-content: center;
+        display: flex;
+        height: 200px;
+
+        .logo {
+            position: absolute;
+            margin-top: 50px;
+
+            img {
+                width: 100px;
+
+                transition-duration: 0.8s;
+                transition-property: transform;
+                transform-origin: 50% 67.5%;
+                overflow: hidden;
+
+                &:hover {
+                    transform: rotate(-360deg)
+                }
+            }
+        }
+    }
+}

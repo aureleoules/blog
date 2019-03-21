@@ -1,0 +1,56 @@
+.page.article {
+    .logo {
+        position: fixed;
+        left: 6%;
+        top: 60px;
+        img {
+            width: 75px;
+            transition-duration: 0.8s;
+            transition-property: transform;
+            transform-origin: 50% 67.5%;
+            overflow: hidden;
+        
+            &:hover {
+                transform: rotate(-360deg)
+            }
+        }
+    }
+
+    .article-content {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 15px;
+
+        .title {
+            font-size: 4em;
+        }
+
+        font-family: 'Charter';
+        color: white;
+        p {
+            font-size: 16px;  
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        pre code {
+            color: inherit!important;
+        }
+        code {
+            color: #65ccb8;
+        }
+
+
+        ul li::before {
+            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+            color: #65ccb8; /* Change the color */
+            font-weight: bold; /* If you want it to be bold */
+            display: inline-block; /* Needed to add space between the bullet and the text */ 
+            width: 1em; /* Also needed for space (tweak if needed) */
+            margin-left: -1em; /* Also needed for space (tweak if needed) */
+          }
+    }
+}

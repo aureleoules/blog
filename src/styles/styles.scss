@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import "loaders";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    font-family: 'Charter', sans-serif;
+    background-color: #1c1d25;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+h1,h2,h3 {
+    font-family: "Gilroy-ExtraBold";
+    color: #65ccb8;
+    margin: 0;
+}
+
+
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('../assets/Gilroy-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: url('../assets/charter.ttf');
+}
+
+
+
