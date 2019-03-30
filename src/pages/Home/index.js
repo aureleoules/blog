@@ -19,6 +19,9 @@ class Home extends React.Component {
 
     componentDidMount() {
         Backpulse.fetchArticles(articles => {
+            articles.sort(function(a,b){
+                return new Date(b.updated_at) - new Date(a.updated_at);
+            });
             this.setState({articles, fetched: true});
         });
     }

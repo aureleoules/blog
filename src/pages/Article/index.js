@@ -35,9 +35,20 @@ class Article extends React.Component {
     componentDidMount() {
         // highlight.initHighlightingOnLoad();
         Backpulse.fetchArticle(this.props.article, article => {
-            console.log(article.content);
-            this.setState({article, fetched: true}, () => this.showColors());
+            this.setState({article, fetched: true}, () => {
+                this.showColors()
+                this.fixLinks();
+            });
         });
+    }
+
+    fixLinks = () => {
+        var links = document.links;
+        for (let i = 0; i < links.length; i++) {
+            if (links[i].hostname != window.location.hostname) {
+                links[i].target = '_blank';
+            } 
+        }
     }
 
     showColors = () => {
