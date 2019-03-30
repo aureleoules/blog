@@ -4,8 +4,6 @@ import Logo from '../../assets/logo.png';
 import './styles.scss';
 import Article from '../../components/Article';
 
-import BackpulseIcon from '../../assets/icons/backpulse.png';
-
 const Backpulse = new (require("backpulse-wrapper"))("aureleoules");
 class Home extends React.Component {
 
@@ -41,10 +39,6 @@ class Home extends React.Component {
                         ))}
                     </div>
                 </div>
-
-                {/* <div className="made-backpulse">
-                    Made with <img src={BackpulseIcon}/>
-                </div> */}
             </div>
         )
     }

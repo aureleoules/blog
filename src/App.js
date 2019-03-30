@@ -10,7 +10,7 @@ class App extends React.Component {
 			<div>
 				<Router>
 					<Home path="/"/>
-					<Article path="/article/:article"/>
+					<Article path="/:article"/>
 				</Router>
 			</div>
 		)
