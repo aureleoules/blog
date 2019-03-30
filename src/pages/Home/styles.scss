@@ -9,6 +9,10 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
+
+            @media screen and(max-width: 600px) {
+                width: 90%;
+            }
         }
     }
     
@@ -44,7 +48,7 @@
             margin-top: 50px;
 
             img {
-                width: 100px;
+                width: 75px;
 
                 transition-duration: 0.8s;
                 transition-property: transform;

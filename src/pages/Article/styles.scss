@@ -3,13 +3,22 @@
         position: fixed;
         left: 6%;
         top: 60px;
+
+        @media screen and(max-width: 700px) {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 35px;
+            text-align: center;
+        }
+
         img {
-            width: 75px;
+            width: 60px;
             transition-duration: 0.8s;
             transition-property: transform;
             transform-origin: 50% 67.5%;
             overflow: hidden;
-        
+            
             &:hover {
                 transform: rotate(-360deg)
             }
@@ -17,11 +26,20 @@
     }
 
     .article-content {
-        width: 60%;
+        width: 65%;
         margin: 0 auto;
         padding-top: 50px;
         padding-bottom: 15px;
 
+        @media screen and(max-width: 700px) {
+            width: 90%;
+            padding-top: 110px;
+            .title {
+                font-size: 3em!important;
+                text-align: center;
+            }
+        }
+        
         .title {
             font-size: 4em;
         }
@@ -29,6 +47,7 @@
         color: white;
         p {
             font-size: 16px;  
+            text-align: justify;
         }
 
         ul {
