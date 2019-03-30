@@ -1,16 +1,31 @@
 .article-box-container {
     border: solid 1px #65ccb8;
     border-radius: 8px;
-    color: #65ccb8;
-    font-size: 2.2em;
-    font-family: "Gilroy-ExtraBold";
     padding: 12px;
     margin: 10px 0;
+    
+    h1 {
+        color: #65ccb8;
+        font-size: 2.2em;
+        font-family: "Gilroy-ExtraBold";
+    }
 
     // transition: all 0.25s;
     transition: 0.25s;
     &:hover {
-        box-shadow: inset 15em 0 0 0 #65ccb8;
+        box-shadow: inset 32em 0 0 0 #65ccb8;
+        h1,span {
+            color: white;
+        }
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    p {
+        font-family: Roboto;
+        font-size: 16px;
         color: white;
     }
 }

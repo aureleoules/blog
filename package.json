@@ -5,12 +5,14 @@
   "dependencies": {
     "axios": "^0.18.0",
     "backpulse-wrapper": "^1.0.1",
+    "dayjs": "^1.8.11",
     "highlight.js": "^9.15.6",
     "node-sass": "^4.11.0",
     "preact": "^8.4.2",
     "preact-markdown": "^0.4.1",
     "preact-router": "2.6.1",
     "react-scripts": "2.1.8",
+    "remove-markdown": "^0.3.0",
     "styled-loaders": "^0.3.0"
   },
   "scripts": {
